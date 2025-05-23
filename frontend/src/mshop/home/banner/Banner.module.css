@@ -1,0 +1,162 @@
+.bannerSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: -webkit-linear-gradient(45deg, #f6463d 0%, #f6398d 45%, #f52cdc 100%);
+}
+
+
+.bannerRight h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2em !important;
+  margin-bottom: 25px;
+}
+
+.bannerRight button {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 35px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid transparent;
+}
+.bannerLeft {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+  }
+}
+
+.bannerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+.bannerDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.bannerRight h1:first-child {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #fff;
+
+  span {
+      font-size: 22px;
+      margin-right: 25px;
+  }
+}
+
+
+
+
+@media only screen and (max-width:1484px) {
+  .bannerRight h1 {
+      font-size: 50px;
+  }
+
+  .bannerRight {
+      padding-top: 100px;
+  }
+}
+
+
+@media only screen and (max-width:1300px) {
+  .bannerRight {
+      padding-top: 200px;
+  }
+}
+
+@media only screen and (max-width:1122px) {
+  .bannerDiv {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+  .bannerLeft {
+      padding: 0;
+      width: 20%;
+      height: 20vh;
+
+      img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+      }
+  }
+
+  .bannerRight {
+      height: 0px;
+      justify-content: center;
+      align-items: center;
+  }
+
+}
+
+
+
+@media only screen and (max-width:1300px) {
+  .bannerRight h1 {
+      font-size: 40px;
+  }
+}
+
+@media only screen and (max-width:1300px) {
+  .bannerRight h1 {
+      font-size: 30px;
+  }
+
+
+  .bannerRight h1:first-child {
+      font-size: 26px;
+  }
+}
+
+
+@media only screen and (max-width:1300px) {
+  .bannerRight h1 {
+      font-size: 20px;
+  }
+
+
+  .bannerRight h1:first-child {
+      font-size: 16px;
+  }
+
+  .bannerLeft {
+      width: 50%;
+      height: 40vh;
+  }
+
+  .bannerRight {
+      @media only screen and (max-width:360px) {
+
+          .bannerRight h1 {
+              font-size: 30px;
+          }
+
+
+          .bannerRight h1:first-child {
+              font-size: 26px;
+          }
+      }
+  }
+}

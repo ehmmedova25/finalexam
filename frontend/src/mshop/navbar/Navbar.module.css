@@ -1,0 +1,110 @@
+.allnavbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav,
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+header {
+  background-color: white;
+}
+
+nav {
+  background-color: #f9f9ff;
+}
+
+
+.container {
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar,
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact span,
+.login {
+  padding: 20px 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+.contact span:hover,
+.login:hover {
+
+  background-color: #f41068;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+
+  a {
+      font-weight: 600;
+      color: #000;
+      padding: 20px;
+      font-size: 15px;
+      text-decoration: none;
+  }
+}
+
+.pages a:last-child {
+  padding-right: 0;
+}
+
+.pages a:hover {
+  color: #f41068;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width:700px) {
+  .pages {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width:1350px) {
+  nav,
+  header{
+      padding: 0 60px;
+  }
+}

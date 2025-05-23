@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mitr:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.productMenSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    z-index: -2;
+}
+
+.container {
+    display: flex;
+    width: 1300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.menTitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 30px;
+
+    h1 {
+        font-size: 36px;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.2em !important;
+        margin-top: 0;
+        font-weight: 600;
+        color: black;
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.625em;
+        color: black;
+    }
+}
+
+.menBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.menProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.productimage {
+    max-width: 100%;
+    height: auto;
+
+    img {
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
+.productBody {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 20%;
+
+    h5 {
+        font-weight: 600;
+        font-size: 16px;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.2em !important;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.2em !important;
+    }
+}
+
+
+
+@media only screen and (max-width:1100px) {
+    .menBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menProduct {
+        width: 40%;
+        align-items: center;
+    }
+
+    .productBody {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    .menBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menProduct {
+        width: 100%;
+        align-items: center;
+    }
+
+    .productBody {
+        width: 100%;
+    }
+}
